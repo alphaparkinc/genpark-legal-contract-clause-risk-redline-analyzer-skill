@@ -1,0 +1,38 @@
+{
+  "name": "genpark-legal-contract-clause-risk-redline-analyzer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Legal contract clause risk detector, automated MSA redline generator, and regulatory compliance analyzer for law firms and enterprise general counsel.",
+  "author": "genpark",
+  "category": "legal-ai",
+  "tags": [
+    "legal-ai",
+    "contract-analysis",
+    "redlining",
+    "msa-compliance",
+    "harvey-ai"
+  ],
+  "inputs": {
+    "msa_contract_text_uri": {
+      "type": "string"
+    },
+    "governing_law": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "analysis_id": {
+      "type": "string"
+    },
+    "high_risk_clauses_detected": {
+      "type": "integer"
+    },
+    "redlined_sections": {
+      "type": "array"
+    },
+    "attorney_review_time_saved_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
